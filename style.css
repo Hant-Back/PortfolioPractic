@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/*-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li {
+	list-style: none;
+}
+/*-----------------------------------------------*/
+[class*="__container"] {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Epilogue', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+.title-small {
+    font-family: 'Epilogue', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2D2D2D;
+}
+.title-small-white {
+    font-family: 'Epilogue', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+/*-------------------------------------------------*/
+/*.header-content {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav-menu {
+    display: flex;
+    gap: 24px;
+}
+.header__burger {
+    display: none;
+}
+.header-logo {
+    transition: all .5s ease;
+}
+.header-logo:hover {
+    transform: scale(1.2);
+}
+.header__nav-item {
+    transition: all 1s ease;
+}
+.header__nav-item:hover {
+    
+}
+/*--------------------------------------------------------*/
+.main__content {
+    display: flex;
+    gap: 68px;
+    padding: 42px 24px;
+}
+.main__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.main__content-text h1 {
+    font-family: 'Epilogue', serif;
+    font-size: 68px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+.main__content-block button {
+    margin-top: 50px;
+    width: 210px;
+    height: 80px;
+    background-color: #2D2D2D;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.main__content-block button:hover {
+    background-color: dimgray;
+}
+.main__content-block button:active {
+    background-color: #009379;
+    color: #2D2D2D;
+}
+@media (max-width: 900px) {
+    .main__content {
+        padding: 10px;
+    }
+    .main__content-img {
+        display: flex;
+        align-items: center;
+    }
+    .main__content-img img{
+        width: 300px;
+        height: 180px;
+    }
+}
+@media (max-width: 768px) {
+    .main__content {
+        display: block;
+    }
+    .main__content-img img{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .main__content-text {
+        gap: 10px;
+    }
+    .main__content-text h1 {
+        font-size: 30px;
+    }
+    .main__content-block button {
+        margin-top: 10px;
+        width: 150px;
+        height: 50px;
+    }
+}
+/*------------------------------------------------------*/
+.logo__content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 1400px) {
+    .logo__content {
+        padding: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .logo__content-components {
+        width: 70px;
+        height: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .logo__content {
+        height: 80px;
+    }
+    .logo__content-components {
+        width: 40px;
+        height: 40px;
+    }
+}
+/*-----------------------------------------------------------*/
+.skills__content {
+    padding: 42px 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.skills_card {
+    padding: 64px 42px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 42px;
+    flex: 1 1 300px;
+}
+.skills_card h1 {
+    font-family: 'Epilogue', serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+@media (max-width: 800px) {
+    .skills__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
