@@ -191,3 +191,13 @@ ul li {
         align-items: center;
     }
 }
+@media (max-width: 650px) {
+    .skills__content {
+        padding: 21px 12px;
+        gap: 12px;
+    }
+    .skills_card {
+        padding: 32px 21px;
+        gap: 21px;
+    }
+}
