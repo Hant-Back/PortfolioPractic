@@ -38,3 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 40) { // Якщо скрол більше 50px
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
