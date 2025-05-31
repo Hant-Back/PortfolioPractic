@@ -282,7 +282,7 @@ ul li {
     gap: 42px;
     flex: 1 1 300px;
 }
-.skills_card h1 {
+.skills_card h3 {
     font-family: 'Epilogue', serif;
     font-size: 27px;
     font-weight: 600;
@@ -308,13 +308,13 @@ ul li {
 .gallery__content {
     display: flex;
     flex-direction: column;
-    padding-bottom: 42px;
+    padding: 0 10px 42px 10px; 
 }
 .gallery__content-text {
     text-align: center;
     padding: 42px 0;
 }
-.gallery__content-text h1 {
+.gallery__content-text h2 {
     font-family: 'Epilogue', serif;
     font-size: 32px;
     font-weight: 600;
@@ -338,9 +338,72 @@ ul li {
     font-weight: 600;
     color: #2D2D2D;
 }
+@media (max-width: 835px) {
+    .gallery__card img {
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .gallery__card img {
+        max-width: 200px;
+    }
+}
 @media (max-width: 425px) {
-    .gallery__content-text h1 {
-        font-size: 20px;
+    .gallery__content-text h2 {
+        font-size: 24px;
     }
 }
 /*--------------------------------------------------*/
+.testimonial__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 42px 10px;
+}
+.testimonial__content-text {
+    text-align: center;
+    padding: 42px 0;
+}
+.testimonial__content-text h2 {
+    font-family: 'Epilogue', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+.testimonial__content-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 395px;
+    gap: 24px;
+}
+.testimonial__card {
+    width: 395px;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    background-color: #F3F3F3;
+}
+.testimonial__card-info {
+    text-align: center;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.testimonial__card-main {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 16px;
+}
+@media (max-width: 835px) {
+    .testimonial__card {
+        width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .testimonial__card {
+        width: 200px;
+        padding: 12px;
+    }
+}
